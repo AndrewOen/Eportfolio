@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #fdfefe; }
+      .border { stroke: #1e293b; stroke-width: 2; fill: none; }
+      .cad-line { stroke: #0f172a; stroke-width: 1.5; fill: none; }
+      .gasket-fill { fill: #fed7aa; stroke: #ea580c; stroke-width: 1.5; }
+      .dim-line { stroke: #64748b; stroke-width: 0.75; fill: none; }
+      .dim-text { font-family: 'JetBrains Mono', monospace, sans-serif; font-size: 10px; fill: #475569; text-anchor: middle; }
+      .tb-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 11px; font-weight: 700; fill: #0f172a; }
+      .tb-meta { font-family: 'JetBrains Mono', monospace; font-size: 8.5px; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect width="800" height="500" class="bg" />
+  <rect x="20" y="20" width="760" height="460" class="border" />
+
+  <!-- Gasket Profile View -->
+  <g transform="translate(100, 70)">
+    <!-- Outer contour -->
+    <rect x="0" y="0" width="135" height="280" rx="3" class="gasket-fill" />
+    <!-- Cutout interior -->
+    <path d="M 22,35 L 113,35 L 113,75 Q 85,105 113,135 L 113,175 Q 85,205 113,245 L 22,245 Q 50,205 22,175 L 22,135 Q 50,105 22,75 Z" fill="#fdfefe" stroke="#ea580c" stroke-width="1.5" />
+    <!-- 6 Mounting Holes -->
+    <circle cx="34" cy="50" r="7" fill="#fdfefe" stroke="#ea580c" stroke-width="1.2" />
+    <circle cx="101" cy="50" r="7" fill="#fdfefe" stroke="#ea580c" stroke-width="1.2" />
+    <circle cx="34" cy="135" r="7" fill="#fdfefe" stroke="#ea580c" stroke-width="1.2" />
+    <circle cx="101" cy="135" r="7" fill="#fdfefe" stroke="#ea580c" stroke-width="1.2" />
+    <circle cx="34" cy="225" r="7" fill="#fdfefe" stroke="#ea580c" stroke-width="1.2" />
+    <circle cx="101" cy="225" r="7" fill="#fdfefe" stroke="#ea580c" stroke-width="1.2" />
+    <!-- Pull Tab / Chamfer -->
+    <path d="M 125,0 L 135,10" stroke="#ea580c" stroke-width="1.2" />
+    <text x="67" y="305" class="dim-text">4.121" x 1.981" x 0.125"</text>
+  </g>
+
+  <!-- Isometric 3D View -->
+  <g transform="translate(320, 80)">
+    <path d="M 40,15 L 130,0 L 150,180 L 60,195 Z" class="gasket-fill" />
+    <ellipse cx="95" cy="95" rx="30" ry="50" fill="#fdfefe" stroke="#ea580c" stroke-width="1.2" />
+    <text x="95" y="220" class="dim-text">3D ISOMETRIC VIEW</text>
+    <text x="95" y="235" class="dim-text" fill="#ea580c">ACRYLIC PSA (1-SIDE)</text>
+  </g>
+
+  <!-- Material Spec Notes Box -->
+  <g transform="translate(480, 50)">
+    <rect x="0" y="0" width="280" height="180" fill="#fff7ed" stroke="#fdba74" stroke-width="1" rx="4" />
+    <text x="14" y="24" class="tb-title" fill="#c2410c">MATERIAL SPECIFICATIONS:</text>
+    <text x="14" y="45" class="tb-meta">• SILICONE SPONGE (MEDIUM DENSITY)</text>
+    <text x="14" y="62" class="tb-meta">• COMPRESSION: 40% DEFLECTION</text>
+    <text x="14" y="79" class="tb-meta">• AMS 3195 SPECIFICATION COMPLIANT</text>
+    <text x="14" y="96" class="tb-meta">• TEMP: -103°F TO 450°F CONTINUOUS</text>
+    <text x="14" y="113" class="tb-meta">• ADHESIVE: DOUBLE COATED POLYESTER</text>
+    <text x="14" y="130" class="tb-meta">• THICKNESS: 0.125" / 0.015" OFFSET</text>
+    <text x="14" y="150" class="tb-meta" font-weight="700" fill="#c2410c">• UL RECOGNIZED WITH PULL TAB</text>
+  </g>
+
+  <!-- ASME Title Block -->
+  <g transform="translate(430, 360)">
+    <rect x="0" y="0" width="350" height="120" class="border" fill="#ffffff" />
+    <line x1="0" y1="35" x2="350" y2="35" class="border" />
+    <line x1="0" y1="70" x2="350" y2="70" class="border" />
+    <line x1="230" y1="35" x2="230" y2="120" class="border" />
+    
+    <text x="12" y="24" class="tb-title" font-size="13">GSKT END CAP UP DWN v2</text>
+    <text x="12" y="52" class="tb-meta">DWG NO: 918024</text>
+    <text x="12" y="65" class="tb-meta">MATERIAL: CLOSED CELL SILICONE SPONGE</text>
+    <text x="12" y="88" class="tb-meta">BY: ANDREW OEN</text>
+    <text x="12" y="102" class="tb-meta">LSI INDUSTRIES INC. | ASME Y14.5-2009</text>
+    
+    <text x="242" y="55" class="tb-meta" font-weight="700">DATE: 6/4/2026</text>
+    <text x="242" y="85" class="tb-meta">SCALE: 3/2</text>
+    <text x="242" y="105" class="tb-meta">SHEET 1 OF 1</text>
+  </g>
+</svg>

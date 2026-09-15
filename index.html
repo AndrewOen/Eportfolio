@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT HERE: Page title and meta description -->
+  <title>Engineering & Technical Project Portfolio</title>
+  <meta name="description" content="Technical portfolio showcasing engineering drawings, documents, presentations, and project videos.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-accent">Andrew</span> Oen
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link active" data-tab="home">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-tab="about">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-tab="academics">Academics</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-tab="experience">Experience</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-tab="projects">Projects</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-outline nav-cta" id="nav-contact-trigger">Get In Touch</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HOME TAB ==================== -->
+    <section id="tab-home" class="tab-content active section blueprint-grid" style="padding-top: 130px;">
+      <div class="container">
+        
+        <div class="home-layout">
+          <!-- Intro / Welcome Column -->
+          <div>
+
+            
+            <h1 class="hero-title" style="margin-top:10px;">
+              Welcome to my <span class="gradient-text">Engineering Portfolio</span>
+            </h1>
+            
+            <h2 class="hero-subtitle" style="margin: 15px 0 25px 0;">
+              <span class="role-static">Showcasing </span>
+              <span class="role-dynamic" id="role-text">CAD Part Drawings</span><span class="cursor">|</span>
+            </h2>
+            
+            <p class="hero-description" style="max-width: 100%; font-size:1.05rem; line-height:1.7; color: var(--text-secondary);">
+              Hello! I am a Junior studying Mechanical Engineering at Auburn University. I have recently completed an internship at LSI Industries this past summer and am currently on the hunt for my next opportunity to learn in the real world of engineering. This portfolio compiles the technical drawings, presentations, demonstrations, coureswork, and more that I have completed during my engineering journey.
+            </p>
+            <p class="hero-description" style="max-width: 100%; font-size:1.05rem; line-height:1.7; margin-top: 15px; color: var(--text-secondary);">
+              Please explore the tabs above to inspect my academic coursework, industrial experience, and cataloged technical files. If you are interested in reaching out, please contact me below!
+            </p>
+
+            <!-- Get In Touch Section (Embedded inside Home) -->
+            <div id="contact-section" style="margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 40px;">
+              <h3 style="font-size:1.8rem; margin-bottom: 25px; font-weight:800; color:var(--text-primary);">
+                Get in <span class="gradient-text">Touch</span>
+              </h3>
+              
+              <div style="display: grid; grid-template-columns: 1fr; gap: 30px;">
+                <div class="contact-card-info">
+                  <div class="contact-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div>
+                      <div style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">EMAIL ADDRESS</div>
+                      <a href="mailto:ato0015@auburn.edu" class="contact-value" style="font-weight:600; color:var(--accent-cyan);">ato0015@auburn.edu</a>
+                    </div>
+                  </div>
+                  
+                  <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                      <div style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">LOCATION / STATE</div>
+                      <span class="contact-value" style="font-weight:600;">Dayton, Ohio</span>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <i class="fa-solid fa-comments"></i>
+                    <div>
+                      <div style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">RELATED LINKS</div>
+                      <div style="display:flex; gap:15px; margin-top:5px; font-family: var(--font-mono); font-size:0.9rem;">
+                        <a href="https://www.linkedin.com/in/andrew-oen" target="_blank" rel="noopener" style="color:var(--accent-cyan); font-weight:600;">[ LinkedIn ]</a>
+                        <a href="./assets/resume.pdf" target="_blank" style="color:var(--accent-cyan); font-weight:600;">[ Resume (PDF) ]</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Profile Picture & Quick Stats Sidebar -->
+            <div class="profile-card glass-card">
+              <img src="./assets/images/profile.jpg" alt="Andrew Oen Portrait" style="width:100%; height:100%; object-fit:cover;">
+              <div class="profile-caption">
+                <strong>Primary Portrait</strong> - Andrew Oen
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT TAB ==================== -->
+    <section id="tab-about" class="tab-content section blueprint-grid" style="padding-top: 130px;">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">My engineering background, technical interests, and leadership roles.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1.3fr 0.7fr; gap: 40px; align-items: flex-start;">
+          <!-- Paragraph Bio -->
+          <div class="glass-card" style="padding: 35px; line-height: 1.7; font-size: 1.05rem;">
+            <h3 style="color:var(--accent-cyan); font-weight:700; margin-bottom: 15px;">Driven by Structural Principles & Design</h3>
+            <p>
+              I was born and raised in Dayton, Ohio by my loving family. Growing up, I played just about every sport there was in my small town and always enjoyed things like legos and small arts and craft projects. I continued my passion for sports and projects through high school as I played football, baseball, basketball, and track while working on personal projects such as paintings, tables, and corn hole sets. Growing up, I always knew I wanted to become an engineer as I looked up to my grandfather who constantly fixed things for people. Then, in high school I took an "Intro To Engineering" class where we created robots that had to complete specific tasks. This class confirmed my decision to study mechanical engineering in college. With my grades and test scores, I was lucky to receive a scholarship to attend Auburn University which I quickly accepted.
+            </p>
+            <p style="margin-top: 15px;">
+              At Auburn University, I have explored a variety of disciplines within mechanical engineering while working to identify the areas that most interest me. In addition to excelling academically (see the "Academics" tab), I am an active member of ASME, the American Society of Mechanical Engineers at Auburn University, where I participate in networking events, design nights, professional development opportunities, and more. I was also selected for Auburn's chapter of Pi Tau Sigma, the international mechanical engineering honor society recognizing the top 25% of mechanical engineering students. Through Pi Tau Sigma and its collaboration with ASME, I have expanded my professional network and gained access to valuable resources that have supported my growth as an engineer. During the summer of 2026, I had the opportunity to intern with LSI Industries (see the "Experience" and "Projects" tabs), where I gained hands-on experience in design and manufacturing. This experience allowed me to apply concepts learned in the classroom to real-world engineering challenges while further developing my technical and professional skills.
+            </p>
+            <p style="margin-top: 15px;">
+              Looking ahead, I am eager to take on new engineering opportunities that challenge me to grow and expand my perspective of the industry. Whether through internships, research, or design projects, I am committed to continuously learning and applying my skills to real-world problems. My goal is to build a career where I can contribute to innovative engineering solutions while continuing to develop as both an engineer and a person.
+            </p>
+          </div>
+
+          <!-- Skills Sidebar Summary -->
+          <div class="glass-card" style="padding: 30px;">
+            <h3 style="font-size:1.15rem; font-weight:700; color:var(--text-primary); margin-bottom:20px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:8px;">Core Tools</h3>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span class="skill-tag" style="background:rgba(255,255,255,0.02); border:1px solid var(--border-color); padding:6px 12px; border-radius:4px; font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-cyan);"><i class="fa-solid fa-cube"></i> SolidWorks</span>
+              <span class="skill-tag" style="background:rgba(255,255,255,0.02); border:1px solid var(--border-color); padding:6px 12px; border-radius:4px; font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-cyan);"><i class="fa-solid fa-chart-line"></i> MATLAB</span>
+              <span class="skill-tag" style="background:rgba(255,255,255,0.02); border:1px solid var(--border-color); padding:6px 12px; border-radius:4px; font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-cyan);"><i class="fa-solid fa-compass-drafting"></i> Autodesk Inventor</span>
+              <span class="skill-tag" style="background:rgba(255,255,255,0.02); border:1px solid var(--border-color); padding:6px 12px; border-radius:4px; font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-cyan);"><i class="fa-solid fa-database"></i> Autodesk Vault (PDM)</span>
+              <span class="skill-tag" style="background:rgba(255,255,255,0.02); border:1px solid var(--border-color); padding:6px 12px; border-radius:4px; font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-cyan);"><i class="fa-solid fa-brain"></i> Artificial Intelligence Management</span>
+              <span class="skill-tag" style="background:rgba(255,255,255,0.02); border:1px solid var(--border-color); padding:6px 12px; border-radius:4px; font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-cyan);"><i class="fa-solid fa-print"></i> 3-D Printing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Photos Gallery Grid -->
+        <div class="about-photos-grid">
+          <div class="about-photo-item glass-card">
+            <img src="./assets/images/about-pi-tau-sigma.jpg" alt="Pi Tau Sigma Initiation Auburn Chi Chapter" loading="lazy">
+            <div class="about-photo-caption">
+              <strong>Pi Tau Sigma Initiation</strong>
+              <span>Auburn Chi Chapter • Spring 2026</span>
+            </div>
+          </div>
+          <div class="about-photo-item glass-card">
+            <img src="./assets/images/about-engineering-lab.jpg" alt="Auburn Mechanical Engineering Lab Mentorship" loading="lazy">
+            <div class="about-photo-caption">
+              <strong>Engineering Lab & Mentorship</strong>
+              <span>Auburn Department of Mechanical Engineering</span>
+            </div>
+          </div>
+          <div class="about-photo-item glass-card">
+            <img src="./assets/images/about-game-friends.jpg" alt="Campus Life and Athletics" loading="lazy">
+            <div class="about-photo-caption">
+              <strong>Campus Life & Athletics</strong>
+              <span>Matchday with Friends</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== LEADERSHIP SECTION ==================== -->
+        <div style="border-top:1px solid rgba(255,255,255,0.05); padding-top:50px;">
+          <h3 style="font-size:2rem; font-weight:800; text-align:center; margin-bottom:10px;">Leadership & <span class="gradient-text">Roles</span></h3>
+          <p style="text-align:center; color:var(--text-secondary); max-width:550px; margin:0 auto 40px auto; font-size:0.95rem;">Key coordination and project leadership tasks completed during my studies.</p>
+          
+          <div class="leadership-grid">
+            <!-- Leadership Card 1: Tippecanoe Men's Luncheon -->
+            <div class="leadership-card glass-card">
+              <div class="leadership-role">Tippecanoe Men’s Luncheon Advisor</div>
+              <div class="leadership-org">Community Leadership • Tipp City, OH</div>
+              <div class="leadership-date">November 2023 - May 2024</div>
+              <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+                Advised, assisted, and organized a group to plan and execute a dedicated luncheon for all male graduating seniors and their fathers, coordinating event programming, logistics, and community outreach.
+              </p>
+            </div>
+            <!-- Leadership Card 2: Design Review & Concept Walk-Through -->
+            <div class="leadership-card glass-card" style="border-left-color:var(--accent-emerald);">
+              <div class="leadership-role">Design Review & Concept Walk-Through Lead</div>
+              <div class="leadership-org">Engineering Design Teams • LSI Industries</div>
+              <div class="leadership-date">May 2026 - August 2026</div>
+              <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+                Led design reviews and concept walk-throughs for my projects, clearly communicating the engineering methodology, decisions, and code. Equipped team members with the documentation needed to troubleshoot, modify, and maintain the designs moving forward (Documents in "Projects" tab).
+              </p>
+            </div>
+            <!-- Leadership Card 3: Project Team Lead -->
+            <div class="leadership-card glass-card" style="border-left-color:#a855f7;">
+              <div class="leadership-role">Project Team Lead</div>
+              <div class="leadership-org">Intro to Mechanical Engineering • Auburn University</div>
+              <div class="leadership-date">August 2024 - December 2024</div>
+              <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.5;">
+                Served as group leader directing a team using SolidWorks to design and structurally optimize a load-bearing bracket, achieving 1st place by supporting the highest weight capacity (78 lbs).
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ACADEMICS TAB ==================== -->
+    <section id="tab-academics" class="tab-content section blueprint-grid" style="padding-top: 130px;">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Education</span>
+          <h2 class="section-title">Academic <span class="gradient-text">Profile</span></h2>
+          <p class="section-subtitle">University degree summary, grades, and outcomes from core engineering courses.</p>
+        </div>
+
+        <!-- Academic GPA & Stats Card -->
+        <div class="academic-header-card glass-card">
+          <h3 style="font-size:1.5rem; font-weight:700; margin-bottom:5px;">Bachelor of Mechanical Engineering</h3>
+          <div style="font-family:var(--font-mono); font-size:0.9rem; color:var(--text-muted);">Auburn University (Auburn, AL) • Samuel Ginn College of Engineering</div>
+          
+          <div class="stats-summary-row" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="academic-stat">
+              <span class="academic-stat-val">4.0 / 4.0</span>
+              <span class="academic-stat-label">Cumulative GPA</span>
+            </div>
+            <div class="academic-stat">
+              <span class="academic-stat-val">May 2028</span>
+              <span class="academic-stat-label">Graduation Date</span>
+            </div>
+            <div class="academic-stat">
+              <span class="academic-stat-val">ME Honor Society (Top 25%)</span>
+              <span class="academic-stat-label">Academic Honors</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="font-size:1.8rem; font-weight:800; text-align:center; margin-bottom:10px;">Relevant Completed <span class="gradient-text">Courses</span></h3>
+        <p style="text-align:center; color:var(--text-secondary); max-width:550px; margin:0 auto 30px auto; font-size:0.95rem;">Completed coursework and grades representing foundational mechanical engineering competencies.</p>
+
+        <!-- Relevant Courses Grid -->
+        <div class="courses-grid">
+          
+          <!-- Course Card 1 -->
+          <div class="course-card glass-card">
+            <div class="course-card-header">
+              <div class="course-info">
+                <span class="course-code">MECH 2130</span>
+                <h4 class="course-name">Mechanical Engineering Statics</h4>
+              </div>
+              <span class="grade-badge">Grade: A</span>
+            </div>
+            <div class="course-card-body" style="margin-bottom: 0;">
+              <p class="course-summary">
+                Study of force systems, equilibrium of particles and rigid bodies, structural analysis of trusses, friction, centroids, and moments of inertia.
+              </p>
+            </div>
+          </div>
+
+          <!-- Course Card 2 -->
+          <div class="course-card glass-card">
+            <div class="course-card-header">
+              <div class="course-info">
+                <span class="course-code">MECH 2140</span>
+                <h4 class="course-name">Kinematics and Dynamics</h4>
+              </div>
+              <span class="grade-badge">Grade: A</span>
+            </div>
+            <div class="course-card-body" style="margin-bottom: 0;">
+              <p class="course-summary">
+                Kinematics and kinetics of particles and rigid bodies. Kinematic analysis of linkages, gears, cams, planar motion, work-energy, and momentum methods.
+              </p>
+            </div>
+          </div>
+
+          <!-- Course Card 3 -->
+          <div class="course-card glass-card">
+            <div class="course-card-header">
+              <div class="course-info">
+                <span class="course-code">MECH 2010</span>
+                <h4 class="course-name">Thermodynamics I</h4>
+              </div>
+              <span class="grade-badge">Grade: A</span>
+            </div>
+            <div class="course-card-body" style="margin-bottom: 0;">
+              <p class="course-summary">
+                Properties of pure substances, first and second laws of thermodynamics, entropy, power cycles, and refrigeration cycles.
+              </p>
+            </div>
+          </div>
+
+          <!-- Course Card 4 -->
+          <div class="course-card glass-card">
+            <div class="course-card-header">
+              <div class="course-info">
+                <span class="course-code">MECH 2020</span>
+                <h4 class="course-name">Manufacturing Technology Lab</h4>
+              </div>
+              <span class="grade-badge">Grade: A</span>
+            </div>
+            <div class="course-card-body" style="margin-bottom: 0;">
+              <p class="course-summary">
+                Introduction to manufacturing processes and laboratory safety. Focuses on manual machining, metrology, CNC programming, and fabrication by providing a semester-long project which requires weekly use of manual mills and lathes (See "Projects").
+              </p>
+            </div>
+          </div>
+
+          <!-- Course Card 5 -->
+          <div class="course-card glass-card">
+            <div class="course-card-header">
+              <div class="course-info">
+                <span class="course-code">MECH 2220</span>
+                <h4 class="course-name">Computer Aided Engineering</h4>
+              </div>
+              <span class="grade-badge">Grade: A</span>
+            </div>
+            <div class="course-card-body" style="margin-bottom: 0;">
+              <p class="course-summary">
+                Study of 3D parametric modeling, assembly design constraints, and stress analysis of mechanical components using CAD/CAE tools, specifically SolidWorks and MatLab. Class also included a lab where a PVC pipe fusion clamp machine was designed as a team (See "Projects").
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 style="font-size:1.8rem; font-weight:800; text-align:center; margin-top:60px; margin-bottom:10px;">Relevant Current <span class="gradient-text">Courses</span></h3>
+        <p style="text-align:center; color:var(--text-secondary); max-width:550px; margin:0 auto 30px auto; font-size:0.95rem;">Mechanical engineering courses currently in progress.</p>
+        
+        <div class="courses-grid" style="margin-bottom: 40px;">
+          <!-- Current Course Card 1 -->
+          <div class="course-card glass-card">
+            <div class="course-card-header">
+              <div class="course-info">
+                <span class="course-code">MECH 3200</span>
+                <h4 class="course-name">Concepts of Mechanical Design</h4>
+              </div>
+              <span class="grade-badge" style="background: rgba(37, 99, 235, 0.08); color: var(--accent-primary); border-color: rgba(37, 99, 235, 0.15);">In Progress</span>
+            </div>
+            <div class="course-card-body" style="margin-bottom: 0;">
+              <p class="course-summary">
+                Study of safety factors, stress concentration, static and fatigue failure analysis, and design constraints of shafts, bearings, and fasteners.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Current Course Card 2 -->
+          <div class="course-card glass-card">
+            <div class="course-card-header">
+              <div class="course-info">
+                <span class="course-code">MECH 3030</span>
+                <h4 class="course-name">Fluid Mechanics</h4>
+              </div>
+              <span class="grade-badge" style="background: rgba(37, 99, 235, 0.08); color: var(--accent-primary); border-color: rgba(37, 99, 235, 0.15);">In Progress</span>
+            </div>
+            <div class="course-card-body" style="margin-bottom: 0;">
+              <p class="course-summary">
+                Study of fluid statics, fluid kinematics, conservation of mass, momentum and energy, internal viscous flow, pipe flow, and boundary layer theory.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Current Course Card 3 -->
+          <div class="course-card glass-card">
+            <div class="course-card-header">
+              <div class="course-info">
+                <span class="course-code">MECH 3020</span>
+                <h4 class="course-name">Thermodynamics II</h4>
+              </div>
+              <span class="grade-badge" style="background: rgba(37, 99, 235, 0.08); color: var(--accent-primary); border-color: rgba(37, 99, 235, 0.15);">In Progress</span>
+            </div>
+            <div class="course-card-body" style="margin-bottom: 0;">
+              <p class="course-summary">
+                Advanced vapor and gas power cycles (Rankine, Otto, Diesel, Brayton), refrigeration, gas mixtures, psychrometrics, and combustion reactions.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Current Course Card 4 -->
+          <div class="course-card glass-card">
+            <div class="course-card-header">
+              <div class="course-info">
+                <span class="course-code">MECH 3120</span>
+                <h4 class="course-name">Mechanics of Materials</h4>
+              </div>
+              <span class="grade-badge" style="background: rgba(37, 99, 235, 0.08); color: var(--accent-primary); border-color: rgba(37, 99, 235, 0.15);">In Progress</span>
+            </div>
+            <div class="course-card-body" style="margin-bottom: 0;">
+              <p class="course-summary">
+                Analyses of stress and strain, deformation under axial loading, torsion of shafts, bending deflection of beams, shear stresses, and pressure vessels.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE TAB ==================== -->
+    <section id="tab-experience" class="tab-content section blueprint-grid" style="padding-top: 130px;">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Work History</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">Positions I have held, detailing my tasks, engineering solutions, and achievements.</p>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Job 1: LSI Industries -->
+          <div class="work-card glass-card">
+            <div>
+              <div class="work-header">
+                <h3 class="work-title">Engineering Intern</h3>
+                <h4 class="work-company">LSI Industries • Cincinnati, OH</h4>
+                <div class="work-date">May 2026 - August 2026</div>
+              </div>
+              <div class="work-desc">
+                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.6;">
+                  Completed an intensive multi-disciplinary engineering internship at LSI Industries headquarters, driving product design, automation, R&amp;D testing, and production operations:
+                </p>
+                <ul>
+                  <li><strong>Mechanical Design:</strong> Redesigned die-cast aluminum end caps for the LAW2 line with integrated mechanical stops and redesigned screw holes to eliminate a second manufactured cover (-$1.34/unit), engineered CNC fixture subplates, and modeled sheet metal light shields in Autodesk Inventor.</li>
+                  <li><strong>Design Automation (iLogic):</strong> Developed an automated commercial lighting pole generator using 8,000+ lines of custom iLogic code and AI tools, integrating with Autodesk Vault PDM and JD Edwards ERP (600% efficiency boost).</li>
+                  <li><strong>R&amp;D &amp; Rapid Prototyping:</strong> Managed 11 design iterations of the LAW2 end cap, executing 3D-print fit-up validation and physical mount testing to verify real-world assembly tolerances.</li>
+                  <li><strong>Manufacturing &amp; Quality:</strong> Gained direct shop-floor visibility across pole and packaging plants, applying NADCA die-casting standards, draft angles, and standard production drawing notes.</li>
+                  <li><strong>Electrical Integration:</strong> Hands-on assembly and wiring of Velocity product family power/control modules, studying electrical schematics to build systems integration fluency.</li>
+                  <li><strong>Operations &amp; ECNs:</strong> Conducted Engineering Change Notice (ECN) reviews, shadowed project managers on production scheduling, and participated in daily agile standups.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Job 1 Photo -->
+            <div class="work-single-photo">
+              <a href="./assets/images/lsi-experience.jpg" target="_blank" rel="noopener" class="work-photo-frame glass-card" title="Andrew Oen at LSI Industries Headquarters (Click to view full photo)">
+                <img src="./assets/images/lsi-experience.jpg" alt="Andrew Oen at LSI Industries Headquarters" class="work-photo-img">
+                <div class="work-photo-badge">
+                  <i class="fa-solid fa-building"></i> LSI Industries • Cincinnati, OH
+                </div>
+              </a>
+            </div>
+
+            <!-- Multi-Disciplinary Engineering Breakdown -->
+            <div class="work-card-full">
+              <div class="lsi-breakdown-actions">
+                <button class="lsi-breakdown-toggle-btn" id="lsi-breakdown-toggle" type="button">
+                  <i class="fa-solid fa-list-check"></i>
+                  <span class="btn-text">View Full Technical Breakdown (6 Disciplines)</span>
+                  <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+                </button>
+                <a href="./assets/engineering-files/documents/internship-at-lsi-industries-summary.pdf" target="_blank" rel="noopener" class="lsi-pdf-btn" title="Download official internship summary PDF">
+                  <i class="fa-solid fa-file-pdf"></i> Download PDF Summary
+                </a>
+              </div>
+
+              <!-- Collapsible 6-Discipline Grid -->
+              <div class="lsi-disciplines-drawer" id="lsi-disciplines-drawer">
+                <div class="lsi-disciplines-grid">
+                  
+                  <!-- 1. Mechanical Engineering -->
+                  <div class="discipline-card glass-card">
+                    <div class="discipline-header">
+                      <i class="fa-solid fa-gears"></i>
+                      <h4 class="discipline-title">1. Mechanical Engineering</h4>
+                    </div>
+                    <p class="discipline-intro">Applied core mechanical design principles using Autodesk Inventor to design components, create manufacturing drawings, and refine assemblies.</p>
+                    <ul class="discipline-bullets">
+                      <li><strong>LAW2 End Cap Redesign:</strong> Redesigned die cast aluminum end caps to incorporate a physical stop preventing gasket over-compression, and redesigned screw holes to eliminate a second manufactured cover (-$1.34/unit cost reduction) (See in "Projects" tab).</li>
+                      <li><strong>CNC Subplate Design:</strong> Redesigned a heavy-duty subplate for CNC machining fixtures, focusing on developing precise drawings, identifying datums, and ensuring accurate positioning.</li>
+                      <li><strong>Sheet Metal Design:</strong> Modeled a 4-sided light shield in Inventor. Used sheet metal manufacturing standards to calculate bend allowances and generate flat-pattern drawings with fold-lines (See in "Projects" tab).</li>
+                    </ul>
+                  </div>
+
+                  <!-- 2. Electrical Engineering -->
+                  <div class="discipline-card glass-card">
+                    <div class="discipline-header">
+                      <i class="fa-solid fa-bolt"></i>
+                      <h4 class="discipline-title">2. Electrical Engineering</h4>
+                    </div>
+                    <p class="discipline-intro">Gained practical, hands-on exposure to electrical sub-assemblies and wiring schematics.</p>
+                    <ul class="discipline-bullets">
+                      <li><strong>Velocity Family Modules:</strong> Hands-on assembly of several power and control modules from the Velocity product family.</li>
+                      <li><strong>Systems Integration:</strong> Studied electrical schematics to understand how individual electronic components interface and function together to achieve optimal performance.</li>
+                      <li><strong>Skills Developed:</strong> Overcame previous hesitation toward electrical engineering by building confidence in hardware assembly, wiring, and circuit pathing.</li>
+                    </ul>
+                  </div>
+
+                  <!-- 3. R&D & Product Development -->
+                  <div class="discipline-card glass-card">
+                    <div class="discipline-header">
+                      <i class="fa-solid fa-flask"></i>
+                      <h4 class="discipline-title">3. R&amp;D &amp; Product Development</h4>
+                    </div>
+                    <p class="discipline-intro">Supported the product development lifecycle through iterative design, physical testing, and prototype validation.</p>
+                    <ul class="discipline-bullets">
+                      <li><strong>Iterative Optimization:</strong> Managed 11 design iterations of the LAW2 end cap, systematically adjusting CAD models based on feedback regarding manufacturing constraints, casting parameters, and part costs.</li>
+                      <li><strong>Rapid Prototyping:</strong> Utilized 3D-printing to prototype and test iterations of the end cap, validating physical tolerances and fit-up before final production tooling was cut.</li>
+                      <li><strong>Physical Verification (Mount Test):</strong> Assisted with physical mount testing, identifying discrepancies between CAD models and actual physical assemblies to emphasize mock-up testing importance.</li>
+                    </ul>
+                  </div>
+
+                  <!-- 4. Manufacturing Engineering -->
+                  <div class="discipline-card glass-card">
+                    <div class="discipline-header">
+                      <i class="fa-solid fa-industry"></i>
+                      <h4 class="discipline-title">4. Manufacturing Engineering</h4>
+                    </div>
+                    <p class="discipline-intro">Worked directly with manufacturing processes and constraints to optimize designs for production (Design for Manufacturability).</p>
+                    <ul class="discipline-bullets">
+                      <li><strong>Shop Floor Operations:</strong> Spent time in the pole plant and packaging plant picking parts and painting fixtures, gaining direct visibility into the downstream manufacturing flow.</li>
+                      <li><strong>Casting Constraints:</strong> Learned draft angle standards (2.5°–3.8°), casting tolerances, and thermal shrinkage allowances during the design of cast components.</li>
+                      <li><strong>Drawing Standards:</strong> Created production drawings using industry-standard ASME symbols, clear views, and standard sheet metal notes.</li>
+                    </ul>
+                  </div>
+
+                  <!-- 5. Design Automation & Process Engineering -->
+                  <div class="discipline-card glass-card">
+                    <div class="discipline-header">
+                      <i class="fa-solid fa-code"></i>
+                      <h4 class="discipline-title">5. Design Automation &amp; Process Engineering</h4>
+                    </div>
+                    <p class="discipline-intro">Designed automation workflows and created systems to standardize repetitive engineering tasks.</p>
+                    <ul class="discipline-bullets">
+                      <li><strong>iLogic/Code Development (The Pole Generator):</strong> Developed a parameter-driven pole generation tool in Autodesk Inventor using 8,000+ lines of custom iLogic code in collaboration with AI tools (See in "Projects" tab).</li>
+                      <li><strong>Data Integrity (PDM/ERP Integration):</strong> Connected the automation system with Autodesk Vault for document control and JD Edwards for ERP/BOM synchronization.</li>
+                      <li><strong>Process Standardization (SOP):</strong> Authored and presented a Standard Operating Procedure explaining generator backend architecture and maintenance guidelines for clean ownership transition.</li>
+                    </ul>
+                  </div>
+
+                  <!-- 6. Operations & Administration -->
+                  <div class="discipline-card glass-card">
+                    <div class="discipline-header">
+                      <i class="fa-solid fa-clipboard-check"></i>
+                      <h4 class="discipline-title">6. Operations &amp; Administration</h4>
+                    </div>
+                    <p class="discipline-intro">Learned how engineering departments coordinate projects, manage changes, and interact with the broader business.</p>
+                    <ul class="discipline-bullets">
+                      <li><strong>Engineering Change Notices (ECN):</strong> Performed ECN reviews, learning how to document revisions properly and query change logs to trace why historic designs were altered.</li>
+                      <li><strong>Project Management Shadowing:</strong> Shadowed a project manager to learn about project scoping, team scheduling, and how PMs align production and engineering resources.</li>
+                      <li><strong>Agile Standups:</strong> Participated in morning team meetings to track project paths, discuss obstacles, and practice speaking and presenting to senior engineers.</li>
+                      <li><strong>Vendor Relations:</strong> Attended technical "Lunch-and-Learn" seminars with external suppliers, gaining insight into procurement and business dynamics.</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 2: Brumbaugh Engineering & Surveying -->
+          <div class="work-card glass-card" style="border-left-color: var(--accent-emerald);">
+            <div>
+              <div class="work-header" style="border-left-color: var(--accent-emerald);">
+                <h3 class="work-title">Survey Engineer Intern</h3>
+                <h4 class="work-company" style="color: var(--accent-emerald);">Brumbaugh Engineering &amp; Surveying • West Milton, OH</h4>
+                <div class="work-date">May 2024 - August 2024</div>
+              </div>
+              <div class="work-desc">
+                <ul>
+                  <li>Collaborated with multiple crews/teams to survey and prepare various construction sites to ensure precision during excavation around the Midwest (Ohio, Kentucky, and Indiana).</li>
+                  <li>Shadowed senior engineers using AutoCAD to turn surveying data into 2D and 3D maps of job sites.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Job 2 Company Logo -->
+            <div class="work-single-photo">
+              <a href="./assets/images/brumbaugh-logo.png" target="_blank" rel="noopener" class="work-company-logo-frame" title="Brumbaugh Engineering &amp; Surveying, LLC (Click to view full image)">
+                <div class="work-logo-wrapper">
+                  <img src="./assets/images/brumbaugh-logo.png" alt="Brumbaugh Engineering &amp; Surveying, LLC" class="work-company-logo-img">
+                </div>
+                <div class="work-logo-badge">
+                  <i class="fa-solid fa-mountain-sun" style="color: var(--accent-emerald);"></i> Brumbaugh Eng. &amp; Surveying • West Milton, OH
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS TAB ==================== -->
+    <section id="tab-projects" class="tab-content section blueprint-grid" style="padding-top: 130px;">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Case Studies & Project Files</span>
+          <h2 class="section-title">Engineering <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Detailed project case studies featuring design methodology, CAD models, calculation reports, and project files.</p>
+        </div>
+
+
+        <!-- Project Sub-Tabs Navigation -->
+        <div class="project-subtabs-nav">
+          <button class="project-subtab-btn active" data-subtab="lsi">
+            <i class="fa-solid fa-briefcase"></i> LSI Industries
+          </button>
+          <button class="project-subtab-btn" data-subtab="auburn">
+            <i class="fa-solid fa-graduation-cap"></i> Auburn University
+          </button>
+        </div>
+
+        <!-- Sub-Tab Pane 1: LSI Industries -->
+        <div class="project-subtab-pane active" id="pane-lsi">
+          <div class="projects-horizontal-list" id="lsi-projects-grid"></div>
+        </div>
+
+        <!-- Sub-Tab Pane 2: Auburn University -->
+        <div class="project-subtab-pane" id="pane-auburn">
+          <div class="projects-horizontal-list" id="auburn-projects-grid"></div>
+        </div>
+
+
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-accent">Andrew</span> Oen
+        </a>
+        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-secondary);">Created using my Prompt Engineering skills with AI</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#" class="footer-tab-link" data-tab="about">About</a>
+        <a href="#" class="footer-tab-link" data-tab="academics">Academics</a>
+        <a href="#" class="footer-tab-link" data-tab="experience">Experience</a>
+        <a href="#" class="footer-tab-link" data-tab="projects">Projects</a>
+      </div>
+
+      <div class="footer-copy">
+        <!-- EDIT HERE: Footer copyright -->
+        <p>&copy; <span id="current-year">2026</span> Andrew Oen. All rights reserved.</p>
+      </div>
+
+      <a href="#hero" class="back-to-top" title="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true">
+    <div class="modal-card glass-card">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body" id="modal-body">
+        <!-- Dynamic content injected by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span class="toast-message" id="toast-message">Notification message</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
